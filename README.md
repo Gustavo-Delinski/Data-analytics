@@ -104,19 +104,3 @@ essas seções importam suas bibliotecas e não dependem do Spark.
 O RA2 consulta cinco jogos confirmados de cada grupo. Os horários de evento são didáticos; horários reais são preservados.
 Não há congelamento definitivo das janelas sem tratamento de atraso. As conclusões se limitam à amostra.
 O modelo do RA3 usa avaliações já existentes, portanto não demonstra previsão de sucesso antes do lançamento.
-
-
-### RA3 — Estatística, visualização e Machine Learning
-O notebook mantém as seções 3.1 a 3.5 do template, com medidas descritivas, três visualizações,
-representatividade, classificação Random Forest, avaliação e conclusões. Interpretações e decisões
-estão em células Markdown junto às implementações. O PDF existente recebe correções pontuais e a documentação de RA2 e RA3.
-
-### Execução e limites
-No Colab, execute em ordem; a primeira célula de código instala as dependências. Fora dele, use Python 3.12 e Java 17 ou 21:
-`python -m pip install pandas==2.2.3 numpy==2.1.2 matplotlib==3.9.2 seaborn==0.13.2 scikit-learn==1.6.1 pyspark==4.0.1 requests==2.32.3 kagglehub==0.3.13`.
-O RA1 baixa a versão 59 do dataset ou lê `games.csv` local, confere o SHA-256 e gera `steam_games_limpo.csv`.
-Não é preciso incluir esse CSV no repositório. Para apenas RA3, carregue o CSV gerado e execute 3.1 a 3.5;
-essas seções importam suas bibliotecas e não dependem do Spark.
-O RA2 consulta cinco jogos confirmados de cada grupo. Os horários de evento são didáticos; horários reais são preservados.
-Não há congelamento definitivo das janelas sem tratamento de atraso. As conclusões se limitam à amostra.
-O modelo do RA3 usa avaliações já existentes, portanto não demonstra previsão de sucesso antes do lançamento.
